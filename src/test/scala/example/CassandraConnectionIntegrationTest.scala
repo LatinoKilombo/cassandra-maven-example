@@ -25,8 +25,8 @@ class CassandraConnectionIntegrationTest extends FunSuite with BeforeAndAfter {
   }
 
   after {
-    cluster.close()
     session.close()
+    cluster.close()
   }
 
   test("Can create a keyspace, a table and insert data into it") {

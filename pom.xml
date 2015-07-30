@@ -190,6 +190,7 @@
                         </goals>
                     </execution>
                     <execution>
+                        <!-- use our custom log4j config for the cassandra instance -->
                         <id>cassandra-log4j</id>
                         <phase>package</phase>
                         <configuration>
