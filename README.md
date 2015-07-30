@@ -3,10 +3,10 @@ An example of integrating Cassandra with Maven. This project is setup to run wit
 
 This setup does the following:
 
-    * Finds some free network ports to use with Cassandra. Useful if you run multiple builds concurrently in the same host, like you would in a build server
-    * Configures the Surefire plugin to ignore test classes ending in 'IntegrationTest' or 'ITCase'
-    * Configures the Failsafe plugin to execute integration tests, only picking up classes ending in 'IntegrationTest' or 'ITCase'
-    * Passes the Cassandra ports to the integration tests as environment variables
+* Finds some free network ports to use with Cassandra. Useful if you run multiple builds concurrently in the same host, like you would in a build server
+* Configures the Surefire plugin to ignore test classes ending in 'IntegrationTest' or 'ITCase'
+* Configures the Failsafe plugin to execute integration tests, only picking up classes ending in 'IntegrationTest' or 'ITCase'
+* Passes the Cassandra ports to the integration tests as environment variables
 
 A utility class `CassandraTestUtils` is provided that reads the environment variables to retrieve the setup Cassandra ports. See simple example test case
 
